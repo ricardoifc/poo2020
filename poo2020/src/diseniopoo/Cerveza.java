@@ -44,12 +44,13 @@ public class Cerveza {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
     public double calcular_ventas() {
         double ventas = precio*unidades_vendides;
         return ventas;
     }
     public void presentacion(){
-        System.out.printf("Cerveza: %s\nTipo: %s\nPrecio: %s\nUnidades Vendidas: %s\n\nTotal Ventas: %s", getNombre(), 
+        System.out.printf("Cerveza: %s\nTipo: %s\nPrecio: %s\nUnidades Vendidas: %s\n\nTotal Ventas: %s", getNombre(),
                 getTipo(), getPrecio(), getUnidades_vendides(), calcular_ventas());
     }
 }
