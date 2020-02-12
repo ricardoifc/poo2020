@@ -2,11 +2,11 @@ package diseniopoo;
 
 import java.util.Scanner;
 
+
 public class EjecutarMateria {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Universidad Tecnica Particular de Loja");
-        Thread.sleep(1000);
         System.out.println("Nombre de el estudiante:");
         String nombreEstudiante = sc.nextLine();
         System.out.println("Nombre de la materia:");

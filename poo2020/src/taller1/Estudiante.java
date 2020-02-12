@@ -19,7 +19,6 @@ public class Estudiante {
     /**
      * Metodo para obtener el valor de la variable edad
      * @return
-     * @return
      */
     public int getEdad() {
         return edad;
