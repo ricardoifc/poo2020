@@ -1,9 +1,14 @@
 package disenioseleccion;
 
+import java.util.Scanner;
+
 public class EjecutaDia {
     public static void main(String[] args) {
-        Dia dia = new dia();
-        dia.establecerNum(4);
-        dia.obtenerNombre();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ingrese un numero");
+        int num = sc.nextInt();
+        Dia dia = new Dia();
+        dia.establecerNum(num);
+        System.out.println(dia.obtenerNombre());
     }
 }
