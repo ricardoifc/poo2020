@@ -56,4 +56,5 @@ public class Vehiculo {
     public void setTipo_modelo(String tipo_modelo) {
         this.tipo_modelo = tipo_modelo;
     }
+
 }
