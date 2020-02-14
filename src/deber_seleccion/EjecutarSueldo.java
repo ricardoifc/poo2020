@@ -11,8 +11,8 @@ public class EjecutarSueldo {
         String nombre = sc.nextLine();
         System.out.println("Horas trabajadas:");
         int horas = sc.nextInt();
-        double cuotas = 2;
-        Sueldo sueldo = new Sueldo(nombre, horas, cuotas);
+        double cuota = 2;
+        Sueldo sueldo = new Sueldo(nombre, horas, cuota);
         sueldo.obtenerNombre();
         sueldo.obtenerSueldo();
     }
