@@ -1,12 +1,15 @@
 package taller_repeticion;
 
 public class Cajero {
+
     private double saldo;
     private double deposito;
     private double retiro;
+
     public Cajero(double saldo){
         this.saldo=saldo;
     }
+
     public void Deposito(double deposito){
         this.deposito=deposito;
     }

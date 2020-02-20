@@ -2,7 +2,9 @@ package intropoo;
 
 public class Tiempo {
 
-    //definicion de atributos globales
+    /**
+     * declaracion de variables
+     */
     private int hora;
     private int minuto;
     private int segundo;
