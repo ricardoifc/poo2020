@@ -6,6 +6,7 @@ public class Conversion {
      */
     private String numero;
     private int decimal;
+    private String separar[] = new String[5];
 
     /**
      * Metodo Constructor
@@ -20,9 +21,8 @@ public class Conversion {
      * Metodo para calcular el numero decimal de el numero binario
      */
     public void calcularConversion(){
-        String separar[] = numero.split("");
+        separar= numero.split("");
         int contador = 5;
-        int temp;
         for(int i=0; i < separar.length; i++){
             decimal = (int) (decimal + ((Integer.parseInt(separar[i])) * Math.pow(2, contador)));
             contador = contador -1;
