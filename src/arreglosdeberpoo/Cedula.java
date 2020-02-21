@@ -35,37 +35,57 @@ public class Cedula {
         for(int j =1; j<=7;j= j+2){
             suma = suma + cedula[j];
         }
-        // System.out.println(suma);
+        System.out.println(suma);
     }
 
     /**
      * Metodo para comprobacion de el ultimo digito de la cedula
      */
     public void comprobarCedula(){
-        if(suma <= 10){
+        if(suma== 0){
             suma = 0;
         }else{
-            if(suma <= 20){
-                suma = 20  - suma;
+            if(suma <= 9){
+                suma = 10  - suma;
             }else{
-                if(suma <= 30){
-                    suma = 30  - suma;
+                if(suma == 10){
+                    suma = 0;
                 }else{
-                    if(suma <= 40){
-                        suma = 40  - suma;
+                    if(suma <= 20){
+                        suma = 20  - suma;
                     }else{
-                        if(suma <= 50){
-                            suma = 50  - suma;
+                        if(suma <= 30){
+                            suma = 30  - suma;
                         }else{
-                            if(suma <= 60){
-                                suma = 60  - suma;
+                            if(suma <= 40){
+                                suma = 40  - suma;
+                            }else{
+                                if(suma <= 50){
+                                    suma = 50  - suma;
+                                }else{
+                                    if(suma <= 60){
+                                        suma = 60  - suma;
+                                    }else {
+                                        if (suma <= 70) {
+                                            suma = 70 - suma;
+                                        } else {
+                                            if (suma <= 80) {
+                                                suma = 80 - suma;
+                                            } else {
+                                                if (suma <= 90) {
+                                                    suma = 90 - suma;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
         }
-        //System.out.println(suma);
+        System.out.println(suma);
 
     }
 
