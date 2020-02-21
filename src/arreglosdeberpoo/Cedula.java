@@ -43,7 +43,7 @@ public class Cedula {
      */
     public void comprobarCedula(){
         if(suma <= 10){
-            suma = 10  - suma;
+            suma = 0;
         }else{
             if(suma <= 20){
                 suma = 20  - suma;

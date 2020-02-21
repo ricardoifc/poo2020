@@ -22,7 +22,6 @@ public class Conversion {
     public void calcularConversion(){
         String separar[] = numero.split("");
         int contador = 5;
-        int temp;
         for(int i=0; i < separar.length; i++){
             decimal = (int) (decimal + (Integer.parseInt(separar[i]) * Math.pow(2, contador)));
             contador--;
