@@ -24,8 +24,8 @@ public class Conversion {
         int contador = 5;
         int temp;
         for(int i=0; i < separar.length; i++){
-            decimal = (int) (decimal + ((Integer.parseInt(separar[i])) * Math.pow(2, contador)));
-            contador = contador -1;
+            decimal = (int) (decimal + (Integer.parseInt(separar[i]) * Math.pow(2, contador)));
+            contador--;
         }
     }
 
