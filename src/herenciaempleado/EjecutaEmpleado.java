@@ -14,19 +14,35 @@ public class EjecutaEmpleado {
         System.out.println("Ingrese dependencia");
         dependencia = sc.nextLine();
         System.out.println("1. Para Empleado por hora, 2. Para Empleado Asalariado");
+        opcion = sc.nextInt();
         if(opcion == 1){
             System.out.println("Ingrese Horas");
             int hora = sc.nextInt();
-            double valorHora = sc.nextDouble();
             System.out.println("Ingrese Valor Hora");
-            hora = sc.nextInt();
-            System.out.println("");
+            double valorHora = sc.nextDouble();
             EmpleadoPorHora empleado = new EmpleadoPorHora();
             empleado.setHora(hora);
             empleado.setValorHora(valorHora);
+            empleado.setNombre(nombre);
+            empleado.setCargo(cargo);
+            empleado.setDependencia(dependencia);
+            System.out.println("Nombre: " + empleado.getNombre());
+            System.out.println("Cargo: " + empleado.getCargo());
+            System.out.println("Depenmdencia: " + empleado.getDependencia());
+            System.out.println("El sueldo es: "+ empleado.calcularSueldoPorHora());
         }else{
-
+            System.out.println("Ingrese el valor del salario");
+            double  valorMensual = sc.nextDouble();
             EmpleadoAsalariado empleado = new EmpleadoAsalariado();
+            empleado.setValor_mensual(valorMensual);
+            empleado.setNombre(nombre);
+            empleado.setCargo(cargo);
+            empleado.setDependencia(dependencia);
+            System.out.println("Nombre: " + empleado.getNombre());
+            System.out.println("Cargo: " + empleado.getCargo());
+            System.out.println("Depenmdencia: " + empleado.getDependencia());
+            System.out.println("El sueldo es: "+ empleado.calcularSueldoMensual());
+
         }
 
 
