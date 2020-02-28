@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class EjecutaEmpleado {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        // salario mensual
         String nombre, cargo, dependencia;
         int opcion = 1;
         System.out.println("Ingrese nombre");
@@ -15,6 +16,8 @@ public class EjecutaEmpleado {
         dependencia = sc.nextLine();
         System.out.println("1. Para Empleado por hora, 2. Para Empleado Asalariado");
         opcion = sc.nextInt();
+
+        // Si es uno es sueldo por hora y si es dos es salario mensual
         if(opcion == 1){
             System.out.println("Ingrese Horas");
             int hora = sc.nextInt();
