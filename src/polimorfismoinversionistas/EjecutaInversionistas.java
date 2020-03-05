@@ -15,8 +15,8 @@ public class EjecutaInversionistas {
         empleados = empleados - 1;
         System.out.println(contador);
         System.out.println(empleados);
-        String cadena = "\t\t\t\t\t\t\t\tREPORTE INVERSIONITAS\nRFC\t\t\t\tNOMBRE\t\t\tDEPTO" +
-                "\t\t\tPUESTO\t\t\tSUELDO QUINCENA\n__________________________________________________________" +
+        String cadena = "\t\t\t\t\t\t\t\tREPORTE INVERSIONITAS\nnro\t\t\t\tNombre\t\t\t" +
+                "\t\t\tCuenta\t\t\tInteres\n__________________________________________________________" +
                 "___________________________________________________\n";
         while (contador <= empleados){
             System.out.println("empleado #"+ (contador + 1) + "\nINGRESE UN TIPO DE EMPLEADO\n1. Ahorro\n2." +
