@@ -14,6 +14,7 @@ public abstract class Empleado12 {
      */
     public abstract void calcularSueldoQna();
 
+
     public String getNombre() {
         return nombre;
     }
