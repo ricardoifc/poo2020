@@ -1,4 +1,4 @@
-package herenciainversionistas;
+package polimorfismoinversionistas;
 
 public class Pagare extends Inversionista {
     private double capital;
@@ -10,11 +10,8 @@ public class Pagare extends Inversionista {
         this.plazo = plazo;
     }
 
-    public void calcularInteres(){
+    @Override
+    public void calcularInteres() {
         interes = capital * (taza / 100) * plazo;
     }
-    public double getInteres(){
-        return interes;
-    }
-
 }

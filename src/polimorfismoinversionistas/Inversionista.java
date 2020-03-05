@@ -1,11 +1,12 @@
-package herenciainversionistas;
+package polimorfismoinversionistas;
 
-public class Inversionista {
+public abstract class Inversionista {
     protected String nombre;
     protected double plazo;
     protected double taza = 3;
     protected String numeroCuenta;
     protected double interes;
+
 
 
     public String getNombre() {
@@ -39,4 +40,13 @@ public class Inversionista {
     public void setNumeroCuenta(String numeroCuenta) {
         this.numeroCuenta = numeroCuenta;
     }
+
+    public double getInteres() {
+        return interes;
+    }
+
+    public void setInteres(double interes) {
+        this.interes = interes;
+    }
+    public abstract void calcularInteres();
 }
