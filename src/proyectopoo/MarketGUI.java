@@ -16,7 +16,4 @@ public class MarketGUI {
     private JList list1;
     private JPanel RegistroProducto;
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
 }
