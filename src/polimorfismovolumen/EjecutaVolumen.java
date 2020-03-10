@@ -45,7 +45,7 @@ public class EjecutaVolumen {
                     nombre = "ESFERA";
                     System.out.println("Ingrese el radio de la esfera");
                     double radioEsf = sc.nextDouble();
-                    Esfera esfera = new Esfera(radioEsf,nombre);
+                    Esfera esfera = new Esfera(radioEsf);
                     esfera.calcularVolumen();
                     System.out.printf("EL VOLUMEN DEL %s ES %.2f\n", esfera.getNombreF(), esfera.getVolumen());
                     break;

@@ -1,11 +1,10 @@
 package polimorfismovolumen;
 
 public class Esfera extends Figura {
-    private double radio, volEs;
+    private double radio;
 
-    public Esfera(double radio, String nombre) {
+    public Esfera(double radio) {
         this.radio = radio;
-        this.nombreF = nombre;
     }
     @Override
     public void calcularVolumen() {
