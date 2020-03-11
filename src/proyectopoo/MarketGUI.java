@@ -15,5 +15,6 @@ public class MarketGUI {
     private JTextField Campo1;
     private JList list1;
     private JPanel RegistroProducto;
+    private JComboBox comboBox1;
 
 }
