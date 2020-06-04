@@ -1,7 +1,6 @@
 package polimorfismo_poo;
 
 import herenciaempleado.EmpleadoAsalariado;
-
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
